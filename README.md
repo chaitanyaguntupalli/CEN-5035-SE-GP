@@ -4,6 +4,8 @@ Link: https://2024.msrconf.org/track/msr-2024-mining-challenge
 Link: https://github.com/NAIST-SE/DevGPT
 
 # CEN - 5035 - Software Engineering - Group 22
+## Group Members:
+### Roochitha Ikkurthy (RI23B) Chaitanya Guntupalli (CG21BB) Srinija Dharani (SD23BE)
 ## Contributor: Chaitanya Guntupalli (CG21BB)
 
 ## Contents
