@@ -1,13 +1,18 @@
-# CEN-5035-SE-GP
-# Group 22
-# CG21BB
+# MSR 2024 Mining Challenge
+Link: https://2024.msrconf.org/track/msr-2024-mining-challenge#submission
+## DevGPT Infrastructure
+Link: https://github.com/NAIST-SE/DevGPT
+
+# CEN - 5035 - Software Engineering - Group 22
+## Chaitanya Guntupalli's (CG21BB) Contribution
+
 ## Contents
 
-- [Reseeach question](#researchquestion)
-- [Coding Environment](#codingenvironment)
-- [Structure](#structure)
-- [What's done so far](#whatsdonesofar)
-- [What's left to be done](#whatslefttobedone)
+- [Reseeach Question](##researchquestion)
+- [Coding Environment](##codingenvironment)
+- [Structure](##structure)
+- [Status Report](##statusreport)
+- [Future Work](##futurework)
 
 ## Research Question
 
@@ -17,7 +22,7 @@ How does the length of conversations with ChatGPT change based on the type of is
 
 I've used Jupyter Notebook for the entire process of collecting, cleaning(Preprocessing) and categorizing the data, and also the plan is to use the Data Visulaizing tool within this Environment for the nest representation of the rsults.
 
-## structure
+## Structure
 
 ### Data Collection
 
@@ -45,4 +50,20 @@ For example, Bugs might more likely include words like "error", "problem", "bug"
 I've written a function that takes 'Prompts' as input and returns the category based on the keywords and patterns defined. this functions basically defines the accuracy of the data.
 
 ### Length of Conversation Calculation
+
+For calculating the length of coversation, I've modified the data processing as such that I'll also count the number of turns in each conversation while processing the JSON data to extract 'Prompts' and 'Answers'.
+I've included a new column in my DataFrame, that stores the length of eeach conversation.
+
+## Status Report
+
+As of this phase of the project, I've worked towards asnwering the reseach question, I've learned from my group member that the latest snapshot includes all the previous snapshots data init. it helped in subsetting the data to be collected from the DevGPT snapshots. I've used the Jupyter Notebook which helps me access the data easy with Python language and its easy to use. As explained the previous sections, I've managed to clean the data, categorize the issues, and calculate the length od conversation.
+
+## Future Work
+
+I've also included some Data Visualization using Python Matplot in the Notebook, which can seem to be the final step of work on the first JSON file, but I still have to improve the issue categorization, as the number of issues categorized as 'others' should be lesser. 
+This will improve the accuracy of issue categorization.
+
+For categorizing, I'll also try the NLP models to understand if they are providing any better results that the regular classification.
+
+What provides the best result will be used on all the remaining .json files and will be presented in the final report.
 
