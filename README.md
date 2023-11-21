@@ -1,18 +1,22 @@
 # MSR 2024 Mining Challenge
-Link: https://2024.msrconf.org/track/msr-2024-mining-challenge#submission
+Link: https://2024.msrconf.org/track/msr-2024-mining-challenge
 ## DevGPT Infrastructure
 Link: https://github.com/NAIST-SE/DevGPT
 
 # CEN - 5035 - Software Engineering - Group 22
-## Chaitanya Guntupalli's (CG21BB) Contribution
+## Contributor: Chaitanya Guntupalli (CG21BB)
 
 ## Contents
 
-- [Reseeach Question](##researchquestion)
-- [Coding Environment](##codingenvironment)
-- [Structure](##structure)
-- [Status Report](##statusreport)
-- [Future Work](##futurework)
+1. [Reseeach Question](#research-question)
+2. [Coding Environment](#coding-environment)
+3. [Methodology](#methodology)
+	- [Data Collection](#data-collection)
+	- [Data Preprocessing](#data-preprocessing)
+	- [Issue Categorization](#issue-categorization)
+	- [Length of Conversation Calculation](#length-of-conversation-calculation)
+4. [Status Report](#status-report)
+5. [Future Work](#future-work)
 
 ## Research Question
 
@@ -22,7 +26,7 @@ How does the length of conversations with ChatGPT change based on the type of is
 
 I've used Jupyter Notebook for the entire process of collecting, cleaning(Preprocessing) and categorizing the data, and also the plan is to use the Data Visulaizing tool within this Environment for the nest representation of the rsults.
 
-## Structure
+## Methodology
 
 ### Data Collection
 
@@ -37,7 +41,7 @@ Snapshot_20231012
 	discussion_sharing.json
 	ChatGPT_Link_sharing.csv
 
-### Data Preprocessing(Cleaning)
+### Data Preprocessing
 
 In the .json file, I've navigated through the nested structure, iterated over each element in the 'Sources' column, for each element in 'Sources', accessed 'ChatgptSharing', which is a list, within each item, accessed 'Conversations', and then extracted 'prompt' and 'Answer' from each item in the 'Conversations' list.
 
